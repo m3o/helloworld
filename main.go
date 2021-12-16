@@ -1,8 +1,18 @@
 package main
 
 import (
+	"encoding/json"
+	"io/ioutil"
 	"net/http"
 )
+
+type Request struct {
+	Name string `json:"name"`
+}
+
+type Response struct {
+	Message string `json:"message"`
+}
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
@@ -17,7 +27,7 @@ func main() {
 				return
 			}
 
-			var req request
+			var req Request
 
 			if err := json.Unmarshal(b, &req); err != nil {
 				w.WriteHeader(500)
@@ -29,7 +39,7 @@ func main() {
 				message = "Hello " + req.Name + "!"
 			}
 
-			if err := json.NewEncoder(w).Encode(response{Message: message}); err != nil {
+			if err := json.NewEncoder(w).Encode(Response{Message: message}); err != nil {
 				w.WriteHeader(500)
 				return
 			}
