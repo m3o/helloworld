@@ -6,7 +6,7 @@ This is a simple helloworld app powered by [m3o.com](https://m3o.com).
 
 Run it
 
-```
+```bash
 curl "https://api.m3o.com/v1/app/Run" \
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer $M3O_API_TOKEN" \
@@ -18,7 +18,7 @@ curl "https://api.m3o.com/v1/app/Run" \
 
 Get an app id back. In this case `helloworld`.
 
-```
+```bash
 {
         "service": {
                 "id": "helloworld",
@@ -39,13 +39,13 @@ Get an app id back. In this case `helloworld`.
 
 Call it via `[id].m3o.app`
 
-```
+```bash
 curl https://helloworld.m3o.app?name=Alice
 ```
 
 Get as JSON
 
-```
+```bash
 curl -H 'Content-Type: application/json` \
     -d '{"name": "Alice"}' \
     https://helloworld.m3o.app
