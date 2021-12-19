@@ -1,6 +1,6 @@
 # Helloworld
 
-This is a simple Go app which returns helloworld.
+This is a simple helloworld app powered by [m3o.com](https://m3o.com).
 
 ## Usage
 
