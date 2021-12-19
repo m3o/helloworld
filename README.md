@@ -42,11 +42,3 @@ Call it via `[id].m3o.app`
 ```bash
 curl https://helloworld.m3o.app?name=Alice
 ```
-
-Get as JSON
-
-```bash
-curl -H 'Content-Type: application/json` \
-    -d '{"name": "Alice"}' \
-    https://helloworld.m3o.app
-```
