@@ -4,7 +4,7 @@ This is a simple helloworld app powered by [m3o.com](https://m3o.com).
 
 ## Usage
 
-Run it using the [App](https://m3o.com/app) api
+Run it using the [App api](https://m3o.com/app).
 
 ```bash
 curl "https://api.m3o.com/v1/app/Run" \
