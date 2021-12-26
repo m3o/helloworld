@@ -7,7 +7,7 @@ This is helloworld powered by [M3O](https://m3o.com).
 Run it using the [M3O App](https://m3o.com/app) service.
 
 ```
-m3o app run --name=helloworld --repo=github.com/asim/helloworld
+m3o app run --name=helloworld --repo=github.com/m3o/helloworld
 ```
 
 Get an app url back. In this case `helloworld.m3o.app`.
