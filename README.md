@@ -24,8 +24,6 @@ curl https://helloworld.m3o.app?name=Alice
 
 ### API
 
-Curl it
-
 ```
 curl "https://api.m3o.com/v1/app/Run" \
   -H "Content-Type: application/json" \
